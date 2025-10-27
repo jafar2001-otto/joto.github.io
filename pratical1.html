@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> my first form in HTML</title>
+    </head>
+    <body>
+        <p>
+            <button class="btn">Buy Now</button>
+
+<style>
+.btn {
+  background: linear-gradient(90deg, #ff7a59, #ff4b2b);
+  color: black;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* hover effect */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* click effect */
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* focus (keyboard navigation) */
+.btn:focus {
+  outline: 3px solid rgba(255, 122, 89, 0.4);
+  outline-offset: 3px;
+}
+</style>
+        </p>
+        <form>
+            <h2> personal details </h2>
+
+                <label>Enter first name</label><br>
+                <input type="text" name="first name"><br>
+                <label>Enter last name</label><br>
+                <input type="text" name="last name"><br>
+                <br>
+                <label>submit</label><br>
+                <input type="botton" name="submit">
+                <br>
+                <br>
+                <label>upload your file</label><br>
+                <input type="file" name="fileupload" accept="image">
+                <br>
+                <p><strong>Note:</strong> please upload correct file</p>
+
+        </form>
+    </body>
+    </html>
